@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Exam</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8hBdp-YiPE4GEwQ3HVaQDXFVWee4-86A&libraries=places" defer></script>
+    <script src="validate.js" defer></script>
+</head>
+<body>
+    <form id="form" action="process.php" method="post" onsubmit="return validateForm()">
+        <div class="divide">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br>
+        <div id="map" style="height: 75px; width: 100%; border: black 2px;"></div>
+        <input type="hidden" id="city" name="city">
+
+        <label for="number1">Input Number 1 (max 3 digits):</label>
+        <input type="number" id="number1" name="number1" max="999" required><br>
+
+        <label for="number2">Input Number 2 (max 3 digits):</label>
+        <input type="number" id="number2" name="number2" max="999" required><br>
+
+        <div class="divide">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+    
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <label for="date1">Input Date 1:</label>
+        <input type="date" id="date1" name="date1" required><br>
+
+        <label for="date2">Input Date 2:</label>
+        <input type="date" id="date2" name="date2" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div class="title">
+        <h1>Technical Exam</h1>
+        <h2>Bluesolutions Networks Phils.</h2>
+        <p>Makes Everything Tech Based</p>
+    </div>
+</body>
+</html>
